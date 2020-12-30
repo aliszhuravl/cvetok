@@ -1480,6 +1480,7 @@ ol li::before {
 }
 
 .catalog_tile__item {
+	z-index: 1;
 	width: calc(25% - 30px);
 	margin-right: 40px;
 	margin-bottom: 40px;
@@ -1531,6 +1532,10 @@ ol li::before {
 	left: 20px;
 }
 
+.catalog_tile__item .catalog_img .loop img {
+	border-radius: 0;
+}
+
 .catalog_tile__item .catalog_img .btn_add {
 	position: absolute;
 	z-index: 3;
@@ -1543,8 +1548,8 @@ ol li::before {
 }
 
 .catalog_tile__item .catalog_img:hover .add_cover {
+	z-index: 2;
 	visibility: visible;
-	overflow: hidden;
 	transition: all .2s ease-out;
 	opacity: 1;
 	border-radius: 30px;
@@ -1562,14 +1567,13 @@ ol li::before {
 	transition: transform .8s ease-out;
 	transition: transform .8s ease-out, -webkit-transform .8s ease-out;
 	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
 .catalog_tile__item .catalog_img:hover .loop img {
 	-webkit-transform: none;
 	transform: none;
+	border-radius: 0;
 }
 
 .announce {
