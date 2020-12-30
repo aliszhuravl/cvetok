@@ -1513,6 +1513,7 @@ ol li::before {
 	transition: all .8s ease-out;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+	border-radius: 30px;
 	-o-object-fit: cover;
 	object-fit: cover;
 }
