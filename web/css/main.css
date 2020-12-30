@@ -1537,8 +1537,10 @@ ol li::before {
 
 .catalog_tile__item .catalog_img:hover .add_cover {
 	visibility: visible;
+	overflow: hidden;
 	transition: all .2s ease-out;
 	opacity: 1;
+	border-radius: 30px;
 }
 
 .catalog_tile__item .catalog_img:hover .btn_add {

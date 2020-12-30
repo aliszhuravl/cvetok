@@ -51,6 +51,8 @@
               opacity: 1;
               visibility: visible;
               transition: all 0.2s ease-out;
+              border-radius: 30px;
+              overflow: hidden;
             }
             .btn_add {
               position: absolute;
