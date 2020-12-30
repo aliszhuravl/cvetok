@@ -1561,6 +1561,8 @@ ol li::before {
 	transition: transform .8s ease-out;
 	transition: transform .8s ease-out, -webkit-transform .8s ease-out;
 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
