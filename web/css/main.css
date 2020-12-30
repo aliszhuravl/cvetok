@@ -1509,10 +1509,13 @@ ol li::before {
 }
 
 .catalog_tile__item .catalog_img img {
+	z-index: 1;
 	display: block;
 	width: inherit;
 	height: 100%;
-	transition: all .8s ease-out;
+	transition: -webkit-transform .8s ease-out;
+	transition: transform .8s ease-out;
+	transition: transform .8s ease-out, -webkit-transform .8s ease-out;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	border-radius: 30px;
@@ -1554,6 +1557,9 @@ ol li::before {
 }
 
 .catalog_tile__item .catalog_img:hover img {
+	transition: -webkit-transform .8s ease-out;
+	transition: transform .8s ease-out;
+	transition: transform .8s ease-out, -webkit-transform .8s ease-out;
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
