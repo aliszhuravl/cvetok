@@ -1,0 +1,80 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 64px;
+  padding: 5px 32px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-red;
+  background-color: $color-red;
+  color: #fff;
+  font-family: $font-family_medium;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.2s ease-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: darken($color-red, 5%);
+    background-color: darken($color-red, 5%);
+    transition: all 0.2s ease-out;
+    outline: none;
+  }
+  
+  &:active {
+    border-color: darken($color-red, 5%);
+    background-color: darken($color-red, 5%);
+    transition: all 0.2s ease-out;
+    outline: none;
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+    outline: none;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}

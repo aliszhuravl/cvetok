@@ -1,0 +1,25 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: #000;
+
+  &:hover {
+    color: $color-red;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_red {
+  color: $color-red;
+  
+  &:hover {
+    color: #000;
+  }
+}

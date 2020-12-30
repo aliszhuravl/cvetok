@@ -1,0 +1,123 @@
+.catalog_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+    .sort {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        .left {
+          p {
+            opacity: 0.5;
+          }
+        }
+        .right {
+          width: auto;
+            .dropdown {
+              border: none;
+              width: 100%;
+              .dropdown__list {
+                min-width: fit-content;
+                right: 0;
+                height: 250px;
+              }
+              .dropdown__text {
+                padding: 0 24px;
+                max-width: 100%;
+                  &:after {
+                    right: 0;
+                  }
+              }
+            }
+        }
+    }
+    .catalog {
+      width: 75%;
+      .catalog_tile {
+        .catalog_tile__item {
+          width: calc(33.3333% - 28px);
+          &:nth-child(4n+4) {
+            margin-right: 40px;
+          }
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+}
+
+.filters {
+  width: 25%;
+  padding-right: 60px;
+  .filter_title {
+    font-size: 18px;
+    font-family: $font-family_medium;
+    margin-bottom: 32px;
+  }
+  .filter_body {
+    margin-bottom: 20px;
+    width: 100%;
+    ul {
+      flex-direction: column;
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        .left {
+          height: 22px;
+          label {
+            margin-bottom: 0;
+          }
+          p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+        .right {
+          p {
+            opacity: 0.5;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.show_more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colors_box {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+    .color_item {
+      margin-right: 32px;
+      margin-bottom: 8px;
+        svg {
+          width: 26px;
+        }
+    }
+}
+
+.catalog-page {
+  .stats {
+    margin-bottom: 0;
+  }
+}

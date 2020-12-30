@@ -1,0 +1,82 @@
+//some styles
+.item_info {
+  width: 100%;
+  display: flex;
+    .right {
+      margin-top: 30px;
+      width: 50%;
+      .status {
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 52px;
+        color: $color-dark;
+        text-transform: none;
+      }
+      .rait {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+          p {
+            font-size: 14px;
+            line-height: 13px;
+            letter-spacing: 0.03em;
+            color: rgba(0, 0, 0, 0.6);
+          }
+          .stars {
+            margin-right: 12px;
+            svg {
+              margin-right: 4px;
+            }
+          }
+      }
+      .price {
+        margin-bottom: 20px;
+        color: $color-red;
+        font-size: 24px;
+        line-height: 23px;
+        font-family: $font-family_medium;
+      }
+      .add_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+        .qtt {
+          margin-right: 32px;
+          border: 1px solid $color-border;
+          display: flex;
+          align-items: center;
+            button {
+              border-radius: 0;
+              background-color: transparent;
+              border: 0;
+              padding: 16px 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              outline: none;
+            }
+            div {
+              border-left: 1px solid $color-border;
+              border-right: 1px solid $color-border;
+              padding: 16px 20px;
+              font-size: 18px;
+              line-height: 14px;
+              display: block;
+            }
+        }
+      }
+    }
+    .left {
+      width: 50%;
+      margin-right: 80px;
+      .tabs {
+        width: 100%;
+      }
+    }
+}

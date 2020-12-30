@@ -1,0 +1,55 @@
+.breadcrumbs {
+  .breadcrumbs_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    li a {
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        color: $color-red;
+      }
+    }
+    li p {
+      color: #000;
+      opacity: 0.4;
+      font-size: 16px;
+    }
+    li span {
+      margin: 0 5px;
+    }
+    .disabled {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-left: 2px;
+    }
+  }
+}
+
+.bc_box {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bc_back {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 6px;
+    width: 6px;
+  }
+  span {
+    line-height: 14px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+

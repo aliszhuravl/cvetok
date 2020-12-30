@@ -1,0 +1,32 @@
+/* font-family: "Regular"; */
+@font-face {
+  font-family: "Gotham-Regular";
+  src: url("../fonts/GothamPro/GothamPro.eot");
+  src: url("../fonts/GothamPro/GothamPro.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamPro.woff") format("woff"),
+  url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "Medium"; */
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"),
+  url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "Bold"; */
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"),
+  url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
