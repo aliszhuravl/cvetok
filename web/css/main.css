@@ -1502,8 +1502,10 @@ ol li::before {
 }
 
 .catalog_tile__item .catalog_img .a_cover {
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
+	border-radius: 30px;
 }
 
 .catalog_tile__item .catalog_img img {
