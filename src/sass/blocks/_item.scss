@@ -80,3 +80,28 @@
       }
     }
 }
+
+.qtt {
+  margin-right: 32px;
+  border: 1px solid $color-border;
+  display: flex;
+  align-items: center;
+  button {
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+  div {
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    padding: 16px 20px;
+    font-size: 18px;
+    line-height: 14px;
+    display: block;
+  }
+}

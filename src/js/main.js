@@ -9,3 +9,4 @@
 //= parts/_fancybox.js
 //= parts/_dropdown.js
 //= parts/_range.js
+//= parts/_menu.js

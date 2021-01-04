@@ -11,6 +11,16 @@
   padding-right: 20px;
 }
 
+@media (min-width: 1600px) {
+  .points_opener .points, .filters_opener .points {
+    width: 26vw;
+  }
+  .main_header {
+    background-position: 70% bottom;
+  }
+}
+
+
 @media (min-width: 1200px) {
 
   .layout-inner {

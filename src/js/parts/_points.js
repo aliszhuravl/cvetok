@@ -30,4 +30,11 @@
         $('.filters_opener').removeClass('filters_opened');
     });
 
+    $('.open_search').on('click', function () {
+        $('.panel_search').addClass('ps_opened');
+    });
+
+    $('.close_search').on('click', function () {
+        $('.panel_search').removeClass('ps_opened');
+    });
 })(jQuery);

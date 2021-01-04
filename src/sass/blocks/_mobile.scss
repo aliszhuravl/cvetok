@@ -78,7 +78,7 @@
     margin-right: 24px;
   }
   .burger {
-    margin-right: 14px;
+    margin-right: 0;
   }
   .address {
     width: 20% !important;
@@ -269,5 +269,82 @@
   .close-modal {
     top: -40px;
     right: -20px;
+  }
+
+  .flowers_body {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  .flowers_body .flower_item {
+    margin-bottom: 30px;
+    .name {
+      p {
+        font-size: 14px;
+      }
+      img {
+        margin-right: 12px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  .flowers_body .flower_item {
+    .qtt {
+      button {
+        padding: 10px 14px;
+      }
+      div {
+        padding: 10px 14px;
+        font-size: 14px;
+      }
+    }
+  }
+  .add_items__item {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    .btn_add {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    .text_20 {
+      font-size: 14px;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+  .page-inter {
+    .page__item_title {
+      margin-bottom: 32px;
+    }
+  }
+  .submit_window__inner .submit_row {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    &:first-child {
+      margin-bottom: 24px;
+    }
+      .price_d {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .dd {
+        margin-right: 0;
+        margin-bottom: 20px;
+          .dropdown__text {
+            font-size: 14px;
+          }
+      }
+      .btn {
+        width: 100%;
+      }
   }
 }

@@ -9,15 +9,13 @@
 
         var mediaCheckMobile = window.matchMedia('(max-width: 640px)');
         var mediaCheckTablet = window.matchMedia('(min-width: 641px) and (max-width: 1199px)');
-        var mediaCheckMini = window.matchMedia('(min-width: 1201px) and (max-width: 1440px)');
         var mediaCheckDesktop = window.matchMedia('(min-width: 1441px)');
+        var mediaCheckMini = window.matchMedia('(min-width: 1440px)');
         var viewport = document.getElementById('viewport');
 
         if (mediaCheckMobile.matches) {
             viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         } else if (mediaCheckTablet.matches) {
-            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
-        } else if (mediaCheckMini.matches) {
             viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         }
         else if (mediaCheckDesktop.matches) {
@@ -194,6 +192,13 @@ $(document).ready(function() {
         $('.filters_opener').removeClass('filters_opened');
     });
 
+    $('.open_search').on('click', function () {
+        $('.panel_search').addClass('ps_opened');
+    });
+
+    $('.close_search').on('click', function () {
+        $('.panel_search').removeClass('ps_opened');
+    });
 })(jQuery);
 (function($) {
 
@@ -334,4 +339,16 @@ $(document).ready(function() {
         }
     });
 
+});
+$(document).ready(function() {
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 80) {
+            $(".panel").addClass('panel_open')
+        }
+        if (120 > scrolled) {
+            $(".panel").removeClass('panel_open')
+        }
+    }
 });

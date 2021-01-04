@@ -120,6 +120,7 @@
   justify-content: center;
   border: 0;
   box-shadow: none;
+  outline: none;
 }
 
 .catalog_price {
@@ -206,4 +207,20 @@
         font-family: $font-family;
       }
     }
+}
+
+.btn_add__green {
+  box-shadow: 3px 4px 12px rgba(85, 87, 69, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  &:hover {
+    box-shadow: 3px 4px 12px rgba(85, 87, 69, 0.18);
+    transition: all 0.2s ease-out;
+  }
 }

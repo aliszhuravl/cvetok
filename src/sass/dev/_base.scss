@@ -18,7 +18,7 @@ body {
   font: $font-normal 16px/1.5 $font-family;
   font-weight: normal;
   font-style: normal;
-  color: $font-color_dark;
+  color: #333333;
 }
 
 a {
@@ -52,6 +52,10 @@ h2 {
 h3 {
   margin-bottom: 15px;
   font-weight: bold;
+}
+
+.text_20 {
+  font-size: 20px;
 }
 
 .price {
