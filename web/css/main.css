@@ -3701,6 +3701,147 @@ ol li::before {
 	opacity: 1;
 }
 
+.page_article h1 {
+	font-size: 36px;
+}
+
+.article {
+	max-width: 980px;
+}
+
+.article h1 {
+	font-size: 30px;
+	line-height: 40px;
+	max-width: 980px;
+	margin-bottom: 25px;
+	text-transform: none;
+	color: #000;
+}
+
+.article h2 {
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-transform: none;
+}
+
+.article h3 {
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	text-transform: none;
+}
+
+.article b {
+	font-family: 'Gotham-Medium', 'Arial', serif;
+}
+
+.article img {
+	margin: 25px 0;
+}
+
+.article p {
+	font-size: 16px;
+	line-height: 30px;
+	max-width: 980px;
+	margin-bottom: 10px;
+	letter-spacing: .02em;
+}
+
+.article .q {
+	font-family: 'Gotham-Medium', 'Arial', serif;
+	max-width: 980px;
+	margin: 56px 0;
+	padding: 20px 40px;
+	border-left: 2px solid #d43b42;
+}
+
+.article ol {
+	margin-bottom: 20px;
+	padding: 0;
+	counter-reset: myCounter;
+}
+
+.article ol li {
+	display: flex;
+	margin-bottom: 8px;
+	list-style: none;
+	align-items: flex-start;
+}
+
+.article ol li:before {
+	font-family: 'Gotham-Medium', 'Arial', serif;
+	margin: 0 16px 0 0;
+	content: counter(myCounter) '.';
+	counter-increment: myCounter;
+	color: #d43b42;
+}
+
+.article ul {
+	margin-bottom: 20px;
+	padding-left: 25px;
+	list-style-type: none;
+}
+
+.article ul li {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.article ul li:before {
+	position: absolute;
+	top: 6px;
+	left: -25px;
+	width: 6px;
+	height: 6px;
+	margin: 0 16px 0 0;
+	content: '';
+	background-color: #d43b42;
+}
+
+.article .lists {
+	display: flex;
+	margin: 25px 0;
+}
+
+.article .lists ul {
+	margin-right: 32px;
+}
+
+.article .article_img {
+	width: 100%;
+}
+
+.article .images {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.article .images img {
+	display: block;
+	max-width: calc(50% - 16px);
+	margin-right: 32px;
+}
+
+.article .images img:nth-child(2n) {
+	margin-right: 0;
+}
+
+.article .time {
+	line-height: 20px;
+	margin-bottom: 0;
+}
+
+.author {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
