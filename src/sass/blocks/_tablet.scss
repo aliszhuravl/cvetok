@@ -166,4 +166,39 @@
         min-width: 100%;
       }
   }
+  .cart {
+    flex-direction: column;
+      .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+      .right {
+        width: 100%;
+      }
+  }
+  .cart {
+    margin-bottom: 0;
+  }
+  .order_row__top {
+    display: flex;
+    flex-wrap: wrap;
+    .order_num {
+      width: 50% !important;
+    }
+    .status {
+      justify-content: flex-end;
+      margin-bottom: 12px;
+    }
+    .price {
+      order: 2;
+      text-align: center;
+    }
+    .date {
+      order: 1;
+    }
+    .repeat {
+      order: 3;
+    }
+  }
 }

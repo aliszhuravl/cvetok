@@ -1,4 +1,8 @@
 @media (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
   .nomarg {
     margin-bottom: 0;
   }
@@ -346,5 +350,130 @@
       .btn {
         width: 100%;
       }
+  }
+  .article {
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .q {
+      margin: 20px 0;
+      padding: 20px;
+    }
+    img {
+      margin: 20px 0;
+    }
+  }
+  .cart {
+    .cart_top {
+      p {
+        font-size: 12px;
+      }
+    }
+    .left .cart_item {
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px dotted $color-border;
+        .item_inf {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+          flex-direction: column;
+          align-items: center;
+            .item_miniature {
+              margin-right: 0;
+              margin-bottom: 12px;
+              width: 100%;
+              height: 200px;
+              border-radius: 30px;
+            }
+        }
+    }
+  }
+  .submit_window__inner .submit_row.column .price {
+    width: 100%;
+    text-align: center;
+  }
+  .submit_window__inner {
+    padding: 32px 20px;
+  }
+  .cart .submit_row input {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .cart_order .left .client_form .input_row {
+    flex-direction: column;
+    input:first-child {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .cart_order .left .client_form .input_row .dd:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .orders {
+    .cart_item {
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px dotted $color-border;
+      .item_inf {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center !important;
+        .item_miniature {
+          margin-right: 0 !important;
+          margin-bottom: 12px !important;
+          width: 100% !important;
+          height: 200px !important;
+          border-radius: 30px !important;
+        }
+      }
+    }
+  }
+  .submit_row .btn_white {
+    margin-bottom: 20px;
+  }
+  .order_row__top {
+    .uppercase {
+      margin-bottom: 12px;
+    }
+  }
+  .date, .repeat, .price {
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+  .repeat {
+    margin-bottom: 0;
+  }
+  .order_tabs.simple_tabs .tabs__buttons .tabs__btn {
+    font-size: 12px;
   }
 }

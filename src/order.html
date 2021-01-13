@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Оформление заказа</title>
+</head>
+<body>
+<div class="page-container page-main page-inter">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item bc_box">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs_list bc_long">
+                        <li><a href="#" class="link">Главная</a><span> | </span></li>
+                        <li><p class="disabled">Оформление заказа</p></li>
+                    </ul>
+                    <a href="#" class="bc_back link link_black mobile"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.174316 6.3125C0.0826492 6.22083 0.0368159 6.11667 0.0368159 6C0.0368159 5.86667 0.103483 5.73333 0.236816 5.6L5.48682 0.275C5.55348 0.208333 5.62015 0.15 5.68682 0.0999992C5.74515 0.0499988 5.79932 0.0249987 5.84932 0.0249987C5.92432 0.0249987 6.00348 0.0666658 6.08682 0.15L6.58682 0.65C6.67848 0.741666 6.72432 0.829166 6.72432 0.912499C6.72432 1.02083 6.64932 1.15 6.49932 1.3L1.91182 6.0125L6.56182 10.7125C6.71182 10.8625 6.78682 10.9917 6.78682 11.1C6.78682 11.1833 6.75348 11.2583 6.68682 11.325L6.23682 11.7875C6.14515 11.8792 6.04098 11.925 5.92432 11.925C5.77432 11.925 5.64932 11.8625 5.54932 11.7375L0.174316 6.3125Z" fill="black" fill-opacity="0.7"/>
+                    </svg>
+                        <span>Назад</span></a>
+                </div>
+            </section>
+            <section class="page__item">
+                <div class="page__item_title">
+                    <h1>Оформление заказа</h1>
+                </div>
+                <div class="page__item_body">
+                    <div class="cart cart_order">
+                        <div class="left">
+                            <div class="cart_top">
+                                <p class="text-16 uppercase">Заказчик</p>
+                            </div>
+                            <div class="client_form">
+                                <form action="#">
+                                    <input type="text" class="form__item" placeholder="Ваше имя">
+                                    <div class="input_row">
+                                        <input type="text" class="form__item" placeholder="Телефон">
+                                        <input type="text" class="form__item" placeholder="Email">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cart_top">
+                                <p class="text-16 uppercase">Получатель</p>
+                            </div>
+                            <div class="client_form">
+                                <form action="#">
+                                    <input type="text" class="form__item" placeholder="Ваше имя">
+                                    <input type="text" class="form__item" placeholder="Телефон">
+                                    <p class="light">Доставка цветов недорого осуществляется в городе Петрозаводске, а также в пригороде города.</p>
+                                </form>
+                            </div>
+                            <div class="cart_top">
+                                <p class="text-16 uppercase">Адрес и время доставки</p>
+                            </div>
+                            <div class="delivery_map"></div>
+                            <div class="client_form">
+                                <form action="#">
+                                    <input type="text" class="form__item" placeholder="Адрес доставки">
+                                    <div class="input_row">
+                                        <div class="dd">
+                                            <div class="dropdown dropdown_filters dd_round">
+                                                <div class="dropdown__text">Дата</div>
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <p>21 января</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>22 января</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>23 января</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>24 января</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>25 января</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dd">
+                                            <div class="dropdown dropdown_filters dd_round">
+                                                <div class="dropdown__text">Время доставки</div>
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <p>10:00 - 13:00</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>13:00 - 16:00</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>16:00 - 19:00</p>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <p>19:00 - 22:00</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="orders">
+                                <div class="cart_top">
+                                    <p class="text-16 uppercase">Состав заказа</p>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="item_inf">
+                                        <div class="item_miniature">
+                                            <img src="img/107.jpg" alt="#">
+                                        </div>
+                                        <p class="medium">Букет №16</p>
+                                    </div>
+                                    <div class="qtt">
+                                        <button><img src="img/-.svg" alt=""></button>
+                                        <div>1</div>
+                                        <button><img src="img/+.svg" alt=""></button>
+                                    </div>
+                                    <p>2549 руб.</p>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="item_inf">
+                                        <div class="item_miniature">
+                                            <img src="img/13.jpg" alt="#">
+                                        </div>
+                                        <p class="medium">Букет №5</p>
+                                    </div>
+                                    <div class="qtt">
+                                        <button><img src="img/-.svg" alt=""></button>
+                                        <div>1</div>
+                                        <button><img src="img/+.svg" alt=""></button>
+                                    </div>
+                                    <p>2549 руб.</p>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="item_inf">
+                                        <div class="item_miniature">
+                                            <img src="img/59.jpg" alt="#">
+                                        </div>
+                                        <p class="medium">Букет №23</p>
+                                    </div>
+                                    <div class="qtt">
+                                        <button><img src="img/-.svg" alt=""></button>
+                                        <div>1</div>
+                                        <button><img src="img/+.svg" alt=""></button>
+                                    </div>
+                                    <p>2549 руб.</p>
+                                </div>
+                            </div>
+                            <div class="submit_window">
+                                <div class="submit_window__inner">
+                                    <div class="submit_row column">
+                                        <p class="price">7549 руб.</p>
+                                        <p class="price_d">Цена указана с учетом скидки 20%</p>
+                                    </div>
+                                    <div class="submit_row">
+                                        <button class="btn btn_white">Оставить заявку без оплаты</button>
+                                        <button class="btn">Оформить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu.html
+    //= html/_points.html
+    //= html/_modal.html
+    //= html/_filters.html
+    //= html/_panel.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

@@ -44,6 +44,20 @@
   }
 }
 
+.btn_white {
+  background-color: #fff;
+  color: $color-red;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: darken($color-red, 5%);
+    background-color: #fff;
+    color: $color-red;
+    transition: all 0.2s ease-out;
+    outline: none;
+  }
+}
+
 .btn_disabled {
   border-color: $color-gray-40;
   background-color: $color-gray-10;

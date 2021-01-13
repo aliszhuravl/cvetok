@@ -54,8 +54,17 @@ h3 {
   font-weight: bold;
 }
 
+.text_16 {
+  font-size: 16px;
+}
+
 .text_20 {
   font-size: 20px;
+}
+
+.light {
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 .price {
@@ -72,7 +81,27 @@ h3 {
   margin-bottom: 40px !important;
 }
 
+.op_06 {
+  opacity: 0.6;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-family: $font-family_medium;
+}
+
+.bold {
+  font-family: $font-family_bold;
+}
 
 .medium {
   font-family: $font-family_medium;
+}
+
+.yellow {
+  background-color: #FF8A00;
+}
+
+.green {
+  background-color: #93CC88;
 }
