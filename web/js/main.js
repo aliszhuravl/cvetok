@@ -65,7 +65,7 @@ window.onload = function() {
         });
     }
 
-    smoothScroll( '#link-to-block' );
+    smoothScroll( '.link-to-block' );
 
 })(jQuery);
 $(document).ready(function() {
@@ -352,3 +352,13 @@ $(document).ready(function() {
         }
     }
 });
+(function($) {
+
+    $('.sticky').hcSticky({
+        top: 120,
+        bottomEnd: 40,
+        className: 'is-sticky',
+        wrapperClassName: 'wrapper-sticky'
+    });
+
+})(jQuery);

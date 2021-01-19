@@ -201,4 +201,36 @@
       order: 3;
     }
   }
+  .discount {
+    flex-wrap: wrap;
+      &__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+  }
+  .sticky_block {
+    display: none;
+  }
+  .big_block {
+    width: 100%;
+  }
+  .title_des .descr {
+    max-width: 100%;
+  }
+  .first_feeds .feed_tile__item:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .first_feeds .feed_tile__item:nth-child(2) {
+    width: 100%;
+    margin-right: 0;
+  }
+  .feed_tile__item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .submit_window__inner {
+    margin-bottom: 40px;
+  }
 }

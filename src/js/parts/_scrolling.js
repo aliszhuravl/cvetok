@@ -16,6 +16,6 @@
         });
     }
 
-    smoothScroll( '#link-to-block' );
+    smoothScroll( '.link-to-block' );
 
 })(jQuery);

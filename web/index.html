@@ -30,7 +30,7 @@
                        <a href="#" class="link">8 (963)-746-11-36</a>
                    </div>
                    <div class="contacts_lk">
-                       <img src="img/lk.svg" alt="">
+                       <a href="lk.html"> <img src="img/lk.svg" alt=""></a>
                    </div>
                    <div class="contacts_bag">
                        <a href="cart.html"><img src="img/bag.svg" alt=""><span>2</span></a>
@@ -866,7 +866,7 @@
                                     <path d="M6.5 0L8.41794 3.86018L12.6819 4.49139L9.6033 7.50832L10.3206 11.7586L6.5 9.763L2.6794 11.7586L3.3967 7.50832L0.318133 4.49139L4.58206 3.86018L6.5 0Z" fill="#93CC88"/>
                                 </svg>
                             </div>
-                            <p>Рейтинг: 5/5 (1 голос)</p>
+                            <p>Купили беолее 150 раз</p>
                         </div>
                         <p class="price">2549 руб.</p>
                         <div class="add_item">
@@ -876,6 +876,9 @@
                                 <button><img src="img/+.svg" alt=""></button>
                             </div>
                             <button class="btn">Добавить в корзину</button>
+                        </div>
+                        <div class="item_link">
+                            <a href="item.html" class="link link_red medium">Смотреть товар</a>
                         </div>
                     </div>
                 </div>
@@ -890,7 +893,7 @@
             <a class="panel_item">
                 <img src="img/p_pin.svg" alt="" id="points_m">
             </a>
-            <a class="panel_item" href="#">
+            <a class="panel_item" href="lk.html">
                 <img src="img/p_lk.svg" alt="">
             </a>
             <a class="panel_item" href="cart.html">
@@ -908,10 +911,49 @@
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 16);
+
+
+        var template = new YMaps.Template(
+                "<div style=\"width:280px;padding:10px;\"><b style=\"margin-bottom:20px;line-height: 24px;font-size:18px;\" >$[name]</b></div>");
+
+        var s = new YMaps.Style();
+        s.balloonContentStyle = new YMaps.BalloonContentStyle(template);
+        s.iconStyle = new YMaps.IconStyle();
+        s.iconStyle.href = "../img/pin.png";
+        s.iconStyle.size = new YMaps.Point(28, 42);
+
+
+        // Создает метку в центре Москвы
+        var placemark1 = new YMaps.Placemark(new YMaps.GeoPoint(34.346878,61.785017),  {style: s} );
+
+        // Устанавливает содержимое балуна
+        placemark1.name = "Петрозаводск, Республика Карелия, Россия";
+        placemark1.description = "С помощью меток можно обозначать на карте различные объекты.";
+
+
+        //Добавляет метку на карту
+        map.addOverlay(placemark1);
+
+        // Открывает балун
+        placemark1.openBalloon();
+    });
+</script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
 <script src="js/libs/slinky.min.js"></script>
+<script src="js/libs/jquery.hc-sticky.min.js"></script>
 <script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
 <script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
 <script src="js/main.js"></script>

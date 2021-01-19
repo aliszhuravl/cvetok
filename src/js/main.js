@@ -10,3 +10,4 @@
 //= parts/_dropdown.js
 //= parts/_range.js
 //= parts/_menu.js
+//= parts/_sticky.js

@@ -392,7 +392,7 @@
       align-items: center;
       padding-bottom: 20px;
       padding-top: 20px;
-      border-bottom: 1px dotted $color-border;
+      //border-bottom: 1px dotted $color-border;
         .item_inf {
           width: 100%;
           margin-right: 0;
@@ -475,5 +475,38 @@
   }
   .order_tabs.simple_tabs .tabs__buttons .tabs__btn {
     font-size: 12px;
+  }
+  .order_row__body {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .order_num {
+      width: auto !important;
+    }
+    .centered {
+      padding-left: 0;
+    }
+    .item_inf {
+      width: 100% !important;
+      margin-right: 0;
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center !important;
+      .item_miniature {
+        margin-right: 0 !important;
+        margin-bottom: 12px !important;
+        width: 100% !important;
+        height: 200px !important;
+        border-radius: 30px !important;
+      }
+    }
+  }
+  .text_20 {
+    font-size: 16px;
+  }
+  .text_16 {
+    font-size: 14px;
+  }
+  .first_feeds .feed_tile__item {
+    padding: 20px;
   }
 }

@@ -120,3 +120,23 @@
   align-items: center;
 }
 
+.list-red {
+  margin-bottom: 20px;
+  padding-left: 25px;
+  list-style-type: none;
+  li {
+    margin-bottom: 24px;
+    position: relative;
+    opacity: 0.8;
+    &:before {
+      width: 6px;
+      height: 6px;
+      background-color: $color-red;
+      content: '';
+      margin: 0 16px 0 0;
+      position: absolute;
+      left: -25px;
+      top: 6px;
+    }
+  }
+}

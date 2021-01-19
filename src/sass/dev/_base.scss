@@ -77,6 +77,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+.mb_20 {
+  margin-bottom: 20px;
+}
+
 .mb_40 {
   margin-bottom: 40px !important;
 }
@@ -100,6 +104,10 @@ h3 {
 
 .yellow {
   background-color: #FF8A00;
+}
+
+.red {
+  background-color: $color-red;
 }
 
 .green {
