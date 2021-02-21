@@ -58,6 +58,11 @@
 
   &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
   &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+
+
+  &::-webkit-scrollbar { width: 0; }
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
 .form__textarea_custom {

@@ -1065,6 +1065,8 @@ h3 {
 	border-radius: 30px;
 	background-color: #fff;
 	box-shadow: none;
+	-ms-overflow-style: none; /* IE 10+ */
+	scrollbar-width: none; /* Firefox */
 }
 
 .form__textarea:focus {
@@ -1085,6 +1087,10 @@ h3 {
 .form__textarea:focus::-moz-placeholder {
 	transition: color .3s;
 	color: transparent;
+}
+
+.form__textarea::-webkit-scrollbar {
+	width: 0;
 }
 
 .form__textarea_custom {
@@ -1579,7 +1585,6 @@ h3 {
 
 .cart .left .text .form__textarea,
 .cart .orders .text .form__textarea {
-	overflow: hidden;
 	height: 64px;
 }
 
@@ -1619,7 +1624,12 @@ h3 {
 }
 
 .cart_order .left .client_form .input_row .dd:first-child {
+	min-width: 40%;
 	margin-right: 20px;
+}
+
+.cart_order .left .client_form .input_row .dd:nth-child(2) {
+	min-width: calc(60% - 20px);
 }
 
 .cart_order .right {
