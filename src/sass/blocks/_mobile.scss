@@ -509,4 +509,28 @@
   .first_feeds .feed_tile__item {
     padding: 20px;
   }
+
+  .tile_simple .tile_item {
+    width: 100%;
+    margin-right: 0;
+    .num {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .text_announce {
+    padding-bottom: 0;
+    p {
+      text-align: left;
+      font-size: 16px;
+    }
+  }
 }

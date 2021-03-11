@@ -233,4 +233,26 @@
   .submit_window__inner {
     margin-bottom: 40px;
   }
+  .double_text {
+    flex-direction: column;
+      .left, .right {
+        width: 100%;
+        margin-right: 0;
+      }
+      .left {
+        margin-bottom: 20px;
+      }
+  }
+  .tile_simple .tile_item {
+    width: calc(50% - 16px);
+      p {
+        padding-right: 0;
+      }
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+  }
 }

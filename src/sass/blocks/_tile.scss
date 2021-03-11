@@ -225,3 +225,42 @@
     transition: all 0.2s ease-out;
   }
 }
+
+.tile_simple {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+    .tile_item {
+      width: calc(33.33333% - 24px);
+      margin-right: 32px;
+      margin-bottom: 32px;
+        .num {
+          color: $color-red;
+          font-size: 24px;
+          font-family: $font-family_medium;
+          margin-bottom: 12px;
+        }
+        p {
+          padding-right: 50px;
+        }
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+}
+
+.text_announce {
+  width: 100%;
+  border-top: 1px solid $color-border;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    p {
+      font-size: 18px;
+      max-width: 800px;
+      text-align: center;
+    }
+}

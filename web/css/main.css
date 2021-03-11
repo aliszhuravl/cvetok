@@ -1901,6 +1901,21 @@ h3 {
 	margin-right: 0;
 }
 
+.double_text {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.double_text .left {
+	width: 50%;
+	margin-right: 60px;
+}
+
+.double_text .right {
+	width: 50%;
+}
+
 .dropdown {
 	position: relative;
 }
@@ -2378,6 +2393,50 @@ ol li::before {
 .btn_add__green:hover {
 	transition: all .2s ease-out;
 	box-shadow: 3px 4px 12px rgba(85, 87, 69, .18);
+}
+
+.tile_simple {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.tile_simple .tile_item {
+	width: calc(33.33333% - 24px);
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+.tile_simple .tile_item .num {
+	font-family: 'Gotham-Medium', 'Arial', serif;
+	font-size: 24px;
+	margin-bottom: 12px;
+	color: #d43b42;
+}
+
+.tile_simple .tile_item p {
+	padding-right: 50px;
+}
+
+.tile_simple .tile_item:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+.text_announce {
+	display: flex;
+	width: 100%;
+	padding: 40px 0;
+	border-top: 1px solid #e5e5e5;
+	align-items: center;
+	justify-content: center;
+}
+
+.text_announce p {
+	font-size: 18px;
+	max-width: 800px;
+	text-align: center;
 }
 
 /* Slider */
@@ -3453,6 +3512,14 @@ ol li::before {
 
 .simple_tabs .tabs__item {
 	width: 100%;
+}
+
+.q {
+	font-family: 'Gotham-Medium', 'Arial', serif;
+	max-width: 980px;
+	margin: 56px 0;
+	padding: 20px 40px;
+	border-left: 2px solid #d43b42;
 }
 
 .item_info {
@@ -4874,6 +4941,36 @@ ol li::before {
 	margin-bottom: 40px;
 }
 
+.double_text {
+	flex-direction: column;
+}
+
+.double_text .left,
+.double_text .right {
+	width: 100%;
+	margin-right: 0;
+}
+
+.double_text .left {
+	margin-bottom: 20px;
+}
+
+.tile_simple .tile_item {
+	width: calc(50% - 16px);
+}
+
+.tile_simple .tile_item p {
+	padding-right: 0;
+}
+
+.tile_simple .tile_item:nth-child(3n+3) {
+	margin-right: 32px;
+}
+
+.tile_simple .tile_item:nth-child(2n) {
+	margin-right: 0;
+}
+
 }
 
 @media (max-width: 960px) {
@@ -5527,6 +5624,36 @@ h2 {
 
 .first_feeds .feed_tile__item {
 	padding: 20px;
+}
+
+.tile_simple .tile_item {
+	width: 100%;
+	margin-right: 0;
+}
+
+.tile_simple .tile_item .num {
+	font-size: 18px;
+}
+
+.tile_simple .tile_item p {
+	font-size: 16px;
+}
+
+.tile_simple .tile_item:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+.tile_simple .tile_item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.text_announce {
+	padding-bottom: 0;
+}
+
+.text_announce p {
+	font-size: 16px;
+	text-align: left;
 }
 
 }

@@ -139,3 +139,11 @@
     width: 100%;
   }
 }
+
+.q {
+  margin: 56px 0;
+  padding: 20px 40px;
+  max-width: 980px;
+  border-left: 2px solid $color-red;
+  font-family: $font-family_medium;
+}

@@ -473,3 +473,16 @@
     }
   }
 }
+
+.double_text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    .left {
+      width: 50%;
+      margin-right: 60px;
+    }
+    .right {
+      width: 50%;
+    }
+}
