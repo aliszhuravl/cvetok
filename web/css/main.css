@@ -3640,9 +3640,23 @@ ol li::before {
 	font-size: 18px;
 	line-height: 14px;
 	display: block;
-	padding: 16px 20px;
+	padding: 0;
 	border-right: 1px solid #e5e5e5;
 	border-left: 1px solid #e5e5e5;
+}
+
+.qtt div .form__number {
+	line-height: 14px;
+	display: block;
+	width: 100%;
+	max-width: 60px;
+	height: 100%;
+	padding: 16px 16px;
+	text-align: center;
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	box-shadow: none;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
