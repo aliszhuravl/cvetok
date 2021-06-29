@@ -90,3 +90,79 @@
   color: $color-gray-50;
   cursor: default;
 }
+
+.color_item {
+  margin-bottom: 20px !important;
+  margin-right: 20px !important;
+
+  .form__checkbox {
+    &_indicator {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border-color: transparent;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .c-red {
+    .form__checkbox_indicator {
+      background: $color-red !important;
+    }
+  }
+
+  .c-or {
+    .form__checkbox_indicator {
+      background: rgb(255, 138, 0) !important;
+    }
+  }
+
+  .c-yel {
+    .form__checkbox_indicator {
+      background: #FFDC5F !important;
+    }
+  }
+
+  .c-gr {
+    .form__checkbox_indicator {
+      background: #93CC88 !important;
+    }
+  }
+
+  .c-blue {
+    .form__checkbox_indicator {
+      background: #63D3F6 !important;
+    }
+  }
+
+  .c-vi {
+    .form__checkbox_indicator {
+      background: #AD63F6 !important;
+    }
+  }
+
+  .c-pi {
+    .form__checkbox_indicator {
+      background: #F98BB2 !important;
+    }
+  }
+
+  .c-wi {
+    .form__checkbox_indicator {
+      background: #FFF !important;
+      border: 1px solid $color-border;
+    }
+  }
+  .c-rainbow {
+    .form__checkbox_indicator {
+      background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) !important;
+    }
+  }
+
+  .form__checkbox > input:checked ~ .form__checkbox_indicator {
+    border: 2px solid #5b3e3a;
+    background: inherit;
+  }
+}

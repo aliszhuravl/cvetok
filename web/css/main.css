@@ -1362,6 +1362,64 @@ h3 {
 	color: #747880;
 }
 
+.color_item {
+	margin-right: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.color_item .form__checkbox_indicator {
+	width: 26px;
+	height: 26px;
+	border-color: transparent;
+	border-radius: 50%;
+}
+
+.color_item .form__checkbox_indicator:after {
+	display: none;
+}
+
+.color_item .c-red .form__checkbox_indicator {
+	background: #d43b42 !important;
+}
+
+.color_item .c-or .form__checkbox_indicator {
+	background: #ff8a00 !important;
+}
+
+.color_item .c-yel .form__checkbox_indicator {
+	background: #ffdc5f !important;
+}
+
+.color_item .c-gr .form__checkbox_indicator {
+	background: #93cc88 !important;
+}
+
+.color_item .c-blue .form__checkbox_indicator {
+	background: #63d3f6 !important;
+}
+
+.color_item .c-vi .form__checkbox_indicator {
+	background: #ad63f6 !important;
+}
+
+.color_item .c-pi .form__checkbox_indicator {
+	background: #f98bb2 !important;
+}
+
+.color_item .c-wi .form__checkbox_indicator {
+	border: 1px solid #e5e5e5;
+	background: #fff !important;
+}
+
+.color_item .c-rainbow .form__checkbox_indicator {
+	background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) !important;
+}
+
+.color_item .form__checkbox > input:checked ~ .form__checkbox_indicator {
+	border: 2px solid #5b3e3a;
+	background: inherit;
+}
+
 .burger {
 	display: none;
 }
