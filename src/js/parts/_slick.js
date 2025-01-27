@@ -60,5 +60,24 @@ $(document).ready(function() {
             $('.p-slide-number').text(indexSlide);
         });
 
+    $('.dop_orders_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        speed: 1500,
+        dots: false,
+        prevArrow: $('#btn_prev'),
+        nextArrow: $('#btn_next'),
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+
+
 });
 
