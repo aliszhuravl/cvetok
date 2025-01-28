@@ -1422,6 +1422,12 @@ h3 {
 	background: inherit;
 }
 
+.btn_del {
+	border: none;
+	background-color: transparent;
+	box-shadow: none;
+}
+
 .burger {
 	display: none;
 }
